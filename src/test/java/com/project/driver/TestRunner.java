@@ -18,14 +18,4 @@ import cucumber.api.junit.Cucumber;
 	)
 public class TestRunner {
 	
-	@BeforeClass
-	public static void killExcel() throws Exception{		
-		Runtime.getRuntime().exec("taskkill /F /IM EXCEL.EXE");
-	  
-	}
-
-    @AfterClass
-    public static void fn_SendMail() throws IOException{
- 	
-    }
 }
