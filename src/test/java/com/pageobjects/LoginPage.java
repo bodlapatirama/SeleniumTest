@@ -13,6 +13,9 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import com.project.teststeps.USTsteps;
 import com.project.utilities.genericUtils;
 import com.project.utilities.projectVariables;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import java.net.URI;
+import java.net.URL;
 
 public class LoginPage {
 
@@ -31,7 +34,15 @@ public class LoginPage {
 
 	public void loginUSTApp()  throws Throwable {
 
-
+         String nodeURL="http://40.121.146.163:4444/wd/hub";
+		DesiredCapabilities capabilities = new DesiredCapabilities();
+		capabilities.setCapability("browserName", "chrome");
+		capabilities.setCapability("browserVersion", "87.0");
+		
+		RemoteWebDriver driver = new RemoteWebDriver(
+		    URI.create(nodeURL).toURL(), 
+		    capabilities
+		);
 		
 		System.out.println("Test trigeered Sucessfully");
 		System.out.println("Jenkins Job completed");
