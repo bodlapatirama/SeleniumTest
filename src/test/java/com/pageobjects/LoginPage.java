@@ -46,6 +46,7 @@ public class LoginPage {
 		);
 		
 		driver.get("https://www.ust-global.com/");
+		driver.manage().window().maximize();
 		System.out.println("Application Launched Sucessfully:="+driver.getTitle());
 		Thread.sleep(9000);
 		Thread.sleep(9000);
