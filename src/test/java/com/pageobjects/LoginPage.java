@@ -44,6 +44,10 @@ public class LoginPage {
 		    capabilities
 		);
 		
+		driver.get("https://www.ust-global.com/");
+		System.out.println("Application Launched Sucessfully:="+driver.getTitle());
+		Thread.sleep(9000);
+		
 		System.out.println("Test trigeered Sucessfully");
 		System.out.println("Jenkins Job completed");
 		
