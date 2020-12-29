@@ -38,7 +38,8 @@ public class LoginPage {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("browserName", "chrome");
 		capabilities.setCapability("browserVersion", "87.0");
-		
+		capabilities.setCapability("enableVNC", true);
+		capabilities.setCapability("name", "RRR");
 		RemoteWebDriver driver = new RemoteWebDriver(
 		    URI.create(nodeURL).toURL(), 
 		    capabilities
@@ -47,7 +48,8 @@ public class LoginPage {
 		driver.get("https://www.ust-global.com/");
 		System.out.println("Application Launched Sucessfully:="+driver.getTitle());
 		Thread.sleep(9000);
-		
+		Thread.sleep(9000);
+		Thread.sleep(9000);
 		System.out.println("Test trigeered Sucessfully");
 		System.out.println("Jenkins Job completed");
 		
