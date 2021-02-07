@@ -34,7 +34,7 @@ public class LoginPage {
 
 	public void loginUSTApp()  throws Throwable {
 
-         String nodeURL="http://http://20.185.58.1:4444/wd/hub";
+         String nodeURL="http://20.185.58.1:4444/wd/hub";
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("browserName", "chrome");
 		capabilities.setCapability("browserVersion", "87.0");
